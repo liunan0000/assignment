@@ -15,7 +15,7 @@ public class Fibonacc{
 	public static void main(String[] args){
 		Fibonacc1 num=new Fibonacc1();
 		Scanner in=new Scanner(System.in);
-		System.out.println("ÇëÊäÈënµÄÊı");
+		System.out.println("è¯·è¾“å…¥ä¸€ä¸ªæ•°");
 		int n=in.nextInt();
 		int[] fin=new int[n+1];
 		for(int i=0;i<n+1;i++){
