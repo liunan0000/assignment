@@ -1,3 +1,4 @@
+//求fibonacc前n项的值
 import java.util.*;
 class Fibonacc1 {
 	public static int Fib(int n){
@@ -15,7 +16,7 @@ public class Fibonacc{
 	public static void main(String[] args){
 		Fibonacc1 num=new Fibonacc1();
 		Scanner in=new Scanner(System.in);
-		System.out.println("璇疯緭鍏ヤ竴涓暟");
+		System.out.println("请输入n的数");
 		int n=in.nextInt();
 		int[] fin=new int[n+1];
 		for(int i=0;i<n+1;i++){
