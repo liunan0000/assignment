@@ -1,17 +1,16 @@
 import java.util.*;
 public class IdentityCard {
 	public static boolean isNumeric(String str){
-		for(int i=16;--i>=0;){
+		for(int i=str.length()-1;--i>=0;){
 			int chr=str.charAt(i);
-			int chr1=str.charAt(17);
-			if((chr<48 || chr>57)&&(chr1<48||chr1>57||chr1!=88))
+			if((chr<48 || chr>57)&&(str.length()<48||str.length()>57||str.length()!=88))
 				return false;
 		}
 		return true;
 	}
 	public static void main(String[] args){
 		Scanner in=new Scanner(System.in);
-		System.out.println("ÇëÊäÈëÄãµÄÉí·İÖ¤ºÅ");
+		System.out.println("è¯·è¾“å…¥ä½ çš„èº«ä»½è¯å·");
 		String id=in.next();
 		isNumeric(id);
 		System.out.println(isNumeric(id));
@@ -24,12 +23,12 @@ public class IdentityCard {
 				sum=sum+arr1[i]*arr[i];
 			}
 			int rem=sum%11;
-			int ch=id.charAt(18);
+			int ch=id.charAt(17);
 			int[] last={49,48,88,57,56,55,54,53,52,51,50};
 			if(last[rem]==ch){
-				System.out.println("ÊäÈëµÄÊÇÕıÈ·µÄ");
+				System.out.println("è¾“å…¥çš„æ˜¯æ­£ç¡®çš„");
 			}else{
-				System.out.println("ÊäÈëµÄÊÇ²»·ûºÏµÄ");
+				System.out.println("è¾“å…¥çš„æ˜¯ä¸ç¬¦åˆçš„");
 			}
 		}
 
